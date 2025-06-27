@@ -3,7 +3,7 @@ def sum_of_seven_smallest(nums):
     if len(nums) < 7:
         raise ValueError("Список должен содержать хотя бы 7 элементов")
 
-    # для поиска семи минимальных элементов можно воспользоваться функцией heapq.nsmallest
+   
     import heapq
     seven_smallest = heapq.nsmallest(7, nums)
     return sum(seven_smallest)
